@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "ExampleAppActionProvider (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "ExampleAppActionProvider (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

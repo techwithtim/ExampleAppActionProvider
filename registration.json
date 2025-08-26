@@ -1,0 +1,36 @@
+{
+  "version": 2,
+  "actions": [
+    {
+      "id": "ExampleAppActionProvider.SendMessage",
+      "description": "Send a message",
+      "icon": "ms-resource://Files/Assets/StoreLogo.png",
+      "usesGenerativeAI": false,
+      "allowedAppInvokers": [ * ],
+      "inputs": [
+        {
+          "kind": "Text",
+          "name": "message"
+        }
+      ],
+      "inputCombinations": [
+        {
+          "inputs": [
+            "message"
+          ],
+          "description": "Send message '${message.Text}'"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "response",
+          "kind": "Text"
+        }
+      ],
+      "invocation": {
+        "type": "COM",
+        "clsid": "0067C3DD-920A-4486-83C3-9FAD82AFFA7A"
+      }
+    }
+  ]
+}
